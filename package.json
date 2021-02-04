@@ -1,0 +1,30 @@
+{
+  "name": "react-express-boilerplate",
+  "version": "1.0.0",
+  "description": "``` mkdir project cd project npm init ```",
+  "main": "index.js",
+  "scripts": {
+    "all-install": "npm install && cd client && npm install",
+    "build": "cd client && npm run build",
+    "start": "cd client && npm run build && cd .. && node server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dillontiner/react-express-boilerplate.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dillontiner/react-express-boilerplate/issues"
+  },
+  "homepage": "https://github.com/dillontiner/react-express-boilerplate#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.16.3"
+  },
+  "devDependencies": {
+    "concurrently": "^3.5.1"
+  },
+  "proxy": "http://localhost:5000"
+}
